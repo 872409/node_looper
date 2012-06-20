@@ -3,7 +3,7 @@ node_looper
 
 背景
 -------------
-工作中有一需求，用node采集大量(超过10W)图片,图片下载时用 fs.createWriteStream 保存图片，由于系统对进程打开文件数量的限制，Mac OS X下打开 248 个文件，就出现 Error: connect EMFILE 错误
+工作中有一需求，用node采集大量(超过10W)图片,图片下载时用 fs.createWriteStream 保存图片，由于系统对进程打开文件数量的限制，Mac OS X下打开 248 个文件，就出现 Error: connect EMFILE 错误 
 用命令： ulimit -n 查了一下，发现只有256,有3个解决方法: 
 
  - 1:修改限制 http://stackoverflow.com/questions/34588/how-do-i-change-the-number-of-open-files-limit-in-linux 
