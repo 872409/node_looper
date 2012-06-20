@@ -89,7 +89,8 @@ looper.each(begin,end,max,run,callback)
  - callback:全部完成时回调 
 
 
- TODO:
+
+TODO:
 -------------
  - 任务以push方式提交到队列 
  - 考虑中.... 
