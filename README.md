@@ -72,7 +72,7 @@ function _for(){
 // _for();
 ```
 
-getHtml 执行函数,在looper里面会被调用执行具体的代码
+getImage 具体执行的任务函数以此为:下载保存图片,在looper里面会被循环调用
 
 参数:
  - looper 当前的looper,函数执行完前要利用looper进行回调 
