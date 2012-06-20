@@ -8,7 +8,7 @@ node_looper v0.1
 
  - 1:修改限制 http://stackoverflow.com/questions/34588/how-do-i-change-the-number-of-open-files-limit-in-linux 
  - 2:做个队列，限制同时进行的下载. 
- - 3:以上两个一来. 
+ - 3:以上两个一起来. 
 
 这个 looper 就是为方法2而来....
 
