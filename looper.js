@@ -75,7 +75,7 @@
     };
 
     looper.each = function(begin,end,max,run,callback){
-          new _looper({begin:begin,end:end,max:max},run,callback).run();
+        new _looper({begin:begin,end:end,max:max},run,callback).run();
     };
 
 
