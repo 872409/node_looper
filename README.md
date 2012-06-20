@@ -37,14 +37,18 @@ looper.each(0,100,10,getHtml,function(){
 });
 ```
 
-##getHtml## 执行函数,在looper里面会被调用执行具体的工作，有两个参数:looper(当前的looper,函数执行完前要利用looper进行回调),index(当前循环索引)
+getHtml 执行函数,在looper里面会被调用执行具体的代码
+
+参数:
+ - looper 当前的looper,函数执行完前要利用looper进行回调 
+ - index 当前循环索引 
 
 ```  js
-looper.each(begin,end,max,run,callback);
+looper.each(begin,end,max,run,callback)
 ```
-##参数:## 
-  begin:循环开始值 
-  end:循环结束值 
-  max:最大同步运行数量 
-  run:执行函数 
-  callback:全部完成时回调 
+参数:
+ - begin:循环开始值 
+ - end:循环结束值 
+ - max:最大同步运行数量 
+ - run:执行函数 
+ - callback:全部完成时回调 
