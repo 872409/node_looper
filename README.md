@@ -1,4 +1,4 @@
-node_looper
+node_looper v0.1
 ===========
 
 背景
@@ -87,3 +87,9 @@ looper.each(begin,end,max,run,callback)
  - max:最大并行数 
  - run:执行函数 
  - callback:全部完成时回调 
+
+
+ TODO:
+-------------
+ - 任务以push方式提交到队列 
+ - 考虑中.... 
