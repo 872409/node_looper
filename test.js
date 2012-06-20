@@ -35,7 +35,7 @@ var sw = new stopWatch('process.nextTick Test');
 
 
 var getHtml = function(l,index){
-		var _url  = "http://www.baidu.com/";//"http://res.img.ifeng.com/2012/0620/wm_6d5a038f3b8eff4f4da642d27bf29c19.jpg";
+		var _url  = "http://res.img.ifeng.com/2012/0620/wm_6d5a038f3b8eff4f4da642d27bf29c19.jpg";//"http://www.baidu.com/";//
 		var options =  url.parse(_url);
 		options.headers = {'cookie':"_"};
 		options.method = 'GET';
@@ -45,21 +45,18 @@ var getHtml = function(l,index){
 				html+=data.toString();
 			});
 			res.on('end', function() {
-				console.log("complate:"+index);
+				console.log("complate\t:"+index+" : runing:"+l.runing);
 				l.callback(index);
 			});
 		}).on('error', function(e) {
-		  console.log("Got error: " + e.message);
+		  console.log("error\t"+index+"\t:" + e.message);
+		  l.callback(index);
 		});
 		req.end();
-		// console.log("req:"+index);
+		console.log("req\t\t:"+index);
 };
-
-// for (var i = 0; i < 5000; i++) {
-// 	getHtmlAction(i);
-// };
-sw.start("setTimeout");
-looper.each(0,5000,10,getHtml,function(){
+ 
+looper.each(0,100,10,getHtml,function(){
 	sw.stop();
 	console.log(sw.getRecord());
 });
